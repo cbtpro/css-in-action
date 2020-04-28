@@ -22,6 +22,14 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [{ loader: 'style-loader' }, { loader: 'css-loader', options: { modules: { localIdentName: '[path][name]__[local]--[hash:base64:5]' } } }],
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     },

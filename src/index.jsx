@@ -8,10 +8,20 @@ import Chessboard from './components/Background/Chessboard'
 import styles from './index.css';
 const App = () => {
   return <div className={styles.app}>
-    你好
-    <TranslucentBorder />
-    <MultipleBorder />
-    <Chessboard />
+    <div className={styles.container}>
+      <div className={styles.item}><TranslucentBorder /></div>
+      <div className={styles.item}><MultipleBorder /></div>
+      <div className={styles.item}><Chessboard /></div>
+      <div className={styles.item}>4</div>
+      <div className={styles.item}>5</div>
+      <div className={styles.item}>6</div>
+      <div className={styles.item}>7</div>
+      <div className={styles.item}>8</div>
+      <div className={styles.item}>9</div>
+    </div>
+    
+    
+    
   </div>
 }
 ReactDOM.render(

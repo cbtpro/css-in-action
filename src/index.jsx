@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 import TranslucentBorder from './components/Border/TranslucentBorder'
 import MultipleBorder from './components/Border/MultipleBorder'
+import Chessboard from './components/Background/Chessboard'
 
 import styles from './index.css';
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     你好
     <TranslucentBorder />
     <MultipleBorder />
+    <Chessboard />
   </div>
 }
 ReactDOM.render(

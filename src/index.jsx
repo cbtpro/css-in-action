@@ -6,22 +6,21 @@ import MultipleBorder from './components/Border/MultipleBorder'
 import Chessboard from './components/Background/Chessboard'
 
 import styles from './index.css';
+import Grid from './components/Layout/Grid'
+import GridItem from './components/Layout/GridItem'
 const App = () => {
   return <div className={styles.app}>
-    <div className={styles.container}>
-      <div className={styles.item}><TranslucentBorder /></div>
-      <div className={styles.item}><MultipleBorder /></div>
-      <div className={styles.item}><Chessboard /></div>
-      <div className={styles.item}>4</div>
-      <div className={styles.item}>5</div>
-      <div className={styles.item}>6</div>
-      <div className={styles.item}>7</div>
-      <div className={styles.item}>8</div>
-      <div className={styles.item}>9</div>
-    </div>
-    
-    
-    
+    <Grid>
+      <GridItem><TranslucentBorder /></GridItem>
+      <GridItem><MultipleBorder /></GridItem>
+      <GridItem><Chessboard /></GridItem>
+      <GridItem>area</GridItem>
+      <GridItem>area</GridItem>
+      <GridItem>area</GridItem>
+      <GridItem>area</GridItem>
+      <GridItem>area</GridItem>
+      <GridItem>area</GridItem>
+    </Grid>
   </div>
 }
 ReactDOM.render(

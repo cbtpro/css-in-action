@@ -1,7 +1,0 @@
-.border {
-  width: 200px;
-  height: 200px;
-  border: 36px solid hsla(0, 0%, 100%, 0.5);
-  background: white;
-  background-clip: padding-box;
-}

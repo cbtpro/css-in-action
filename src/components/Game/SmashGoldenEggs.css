@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: 
+              url(../../assets/images/up_bg.png) no-repeat 0 10%/contain,
+              url(../../assets/images/desk.png) no-repeat 0 80%/contain,
+              url(../../assets/images/bg.png) center/cover;
+}
+.eggs {
+  width: 251px;
+  height: 97px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  grid-template-areas:
+      "area area area";
+  justify-items: center;
+  align-items: center;
+  position: relative;
+    top: 63%;
+}
+.hammer {
+  width: 12%;
+  position: absolute;
+  left: 15px;
+  top: 400px;
+}
+.hammer.active {
+  transform: rotate(30deg) translateY(50%);
+  transition: all 0.3s linear;
+}

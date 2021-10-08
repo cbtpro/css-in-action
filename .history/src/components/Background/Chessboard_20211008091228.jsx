@@ -2,10 +2,8 @@ import React from 'react'
 
 import styles from './Chessboard.css'
 
-const Chessboard = () => {
+export default () => {
   return <>
     <div className={styles.chessboard}></div>
   </>
 }
-
-export default Chessboard

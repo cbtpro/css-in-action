@@ -2,10 +2,8 @@ import React from 'react'
 
 import styles from './Egg.css'
 
-const Egg = () => {
+export default () => {
   return <>
     <div className={styles.egg}></div>
   </>
 }
-
-export default Egg

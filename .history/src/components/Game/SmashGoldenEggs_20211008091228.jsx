@@ -4,7 +4,7 @@ import Egg from './Egg'
 import hammer from '../../assets/images/hammer.png'
 import styles from './SmashGoldenEggs.css'
 
-const SmashGoldenEggs = (props) => {
+export default (props) => {
   return <>
     <div className={styles.container}>
       <img src={hammer} className={`${styles.hammer} ${styles.active}`} />
@@ -18,4 +18,3 @@ const SmashGoldenEggs = (props) => {
     </div>
   </>
 }
-export default SmashGoldenEggs

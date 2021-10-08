@@ -2,3 +2,5 @@
 node_modules/
 # 忽略dist文件夹
 dist/
+.DS_Store
+.history

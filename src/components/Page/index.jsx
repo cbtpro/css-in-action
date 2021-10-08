@@ -15,11 +15,13 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.css'
 
+import backgroundImageT5 from '../../assets/images/t5_compressing.jpg'
+
 const Page = (props) => {
   const { backgroundImage, } = props
 
   const [pageStyles, updatePageStyles] = useState({
-    backgroundImage: ''
+    backgroundImage: `url(${backgroundImageT5})`,
   })
   const lazyLoadImage = (src) => {
     return new Promise((resolve, reject) => {

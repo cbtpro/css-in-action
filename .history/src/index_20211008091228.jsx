@@ -7,14 +7,11 @@ import Chessboard from './components/Background/Chessboard'
 import SmashGoldenEggs from './components/Game/SmashGoldenEggs'
 
 import styles from './index.css';
-import Page from './components/Page'
 import Grid from './components/Layout/Grid'
 import GridItem from './components/Layout/GridItem'
 
-import backgroundImage from './assets/images/T5.jpg'
-
 const App = () => {
-  return <Page className={styles.app} backgroundImage={backgroundImage}>
+  return <div className={styles.app}>
     <Grid>
       <GridItem><TranslucentBorder /></GridItem>
       <GridItem><MultipleBorder /></GridItem>
@@ -26,7 +23,7 @@ const App = () => {
       <GridItem>area</GridItem>
       <GridItem>area</GridItem>
     </Grid>
-  </Page>
+  </div>
 }
 ReactDOM.render(
   <App />,

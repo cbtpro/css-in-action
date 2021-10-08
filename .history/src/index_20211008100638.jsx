@@ -11,9 +11,8 @@ import Page from './components/Page'
 import Grid from './components/Layout/Grid'
 import GridItem from './components/Layout/GridItem'
 
-import backgroundImage from './assets/images/T5.jpg'
-
 const App = () => {
+  const backgroundImage = require('./assets/images/T5.jpg')
   return <Page className={styles.app} backgroundImage={backgroundImage}>
     <Grid>
       <GridItem><TranslucentBorder /></GridItem>

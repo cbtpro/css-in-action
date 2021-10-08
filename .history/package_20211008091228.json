@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
     "build": "webpack --mode=production --config ./build/webpack.config.js",
-    "deploy": "npm run build&gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
